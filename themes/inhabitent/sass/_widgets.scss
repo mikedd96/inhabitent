@@ -33,17 +33,24 @@
 .sideemail:hover {
 	color: #2f1339
 }
-.widgets {
-	display: flex;
-	justify-content: flex-end;
-}
+// .widgets {
+// 	display: flex;
+// 	justify-content: flex-end;
+// 	width: 398px;
+// 	position: fixed
+// }
 .widget-area {
 	width: 398px;
-	flex-direction: column;
-	border-left-width: 1px;
-	border-left-color: grey;
-	border-left-style: solid;
-	padding-left: 3rem;
+-ms-flex-direction: column;
+flex-direction: column;
+border-left-width: 1px;
+border-left-color: grey;
+border-left-style: solid;
+padding-left: 3rem;
+position: relative;
+left: 942px;
+position: sticky;
+height: 100%;
 }
 .sidecontact {
 	display: flex;

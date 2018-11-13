@@ -3,7 +3,40 @@
 --------------------------------------------------------------*/
 
 /* Posts and pages */
-
+.entry-header {
+	position: relative;
+	line-height: 0;
+}
+.entry-title {
+	position: absolute;
+	top: 0;
+	background-color: #248a83;
+	max-width: 75%;
+	padding: .75rem 1.5rem;
+	margin-top: 3rem;
+	color: white;
+	font-size: 2rem;
+	line-height: 1.25rem;
+}
+.entry-meta {
+	background-color: #248a83;
+	position: absolute;
+	bottom: 0;
+	line-height: 1.25rem;
+	color: white;
+	padding: .5rem 1.25rem;
+	right: 0;
+}
+.site-content {
+	display: flex;
+	width: 1120px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.site-main {
+	width: 75%;
+	margin: 0 auto;
+}
 .sticky {
 	display: block;
 }
