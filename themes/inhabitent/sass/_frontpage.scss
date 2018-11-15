@@ -26,3 +26,58 @@
 .frontpage-stuff a:hover {
     background-color: #19625d;
 }
+.journal-container {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-column-gap: 25px;
+
+}
+
+.journal-entry {
+    // width: 350px; 
+    // margin: 10px;  
+}
+.journal-title {
+	top: 0;
+    color: #248a83;
+    font-size: 1.4rem;
+    text-decoration: none;
+    display: block;
+    font-family: Nove Normal;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+.journal-title:hover {
+    color: #2f1339;
+}
+.read-more {
+    color: black;
+    padding: .75rem 1.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+}
+.entry-date, .entry-meta {
+    color: black;
+    font-family: Merriweather Light;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 100;
+}
+.entry-date, .journal-title, .read-more {
+    margin-left: 10px
+}
+.journal-text {
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-top-width: 5px;
+    border-style: solid;
+    border-color: #e1e1e1;
+}

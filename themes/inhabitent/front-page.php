@@ -40,25 +40,29 @@ get_header(); ?>
 ?>
 <section class="front-page-journal">
 <h2>Inhabitent Journal</h2>
+<div class="journal-container">
 <?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
 <article class=" journal-entry">
    <?php 
    the_post_thumbnail('small');?>
-   <span class="entry-meta">
+   <div class="journal-text">
+   <span class="entry-meta">    
    <?php
    red_starter_posted_on();
    echo ' / ';
    comments_number( '0 comments', '1 comment', '% comments' );
    ?>
    </span>
-   <a href="<?php echo get_the_permalink(); ?>">
+   <a class="journal-title" href="<?php echo get_the_permalink(); ?>">
    <?php the_title(); ?>
    </a>
    <a class="read-more" href="<?php echo get_the_permalink(); ?>">
    Read More
    </a>
+    </div>
    </article>
 <?php endforeach; wp_reset_postdata(); ?>
+    </div>
 </section>
 		
 
