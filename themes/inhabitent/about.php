@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying the about pahe on inhabitent.
+ * The template for displaying the about page on inhabitent.
  *
  * @package RED_Starter_Theme
  * Template Name: About Page Template

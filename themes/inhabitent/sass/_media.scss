@@ -12,7 +12,10 @@
 }
 
 /* Make sure embeds and iframes fit their containers. */
-
+iframe {
+	border: none;
+	width: 100%
+}
 embed,
 iframe,
 object {

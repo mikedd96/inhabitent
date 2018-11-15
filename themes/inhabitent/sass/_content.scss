@@ -7,7 +7,7 @@
 	position: relative;
 	line-height: 0;
 }
-.entry-title {
+.blog .entry-title {
 	position: absolute;
 	top: 0;
 	background-color: #248a83;
@@ -18,7 +18,12 @@
 	font-size: 2rem;
 	line-height: 1.25rem;
 }
-.entry-meta {
+.blog h2 a {
+	color: white;
+	text-decoration: none;
+	line-height: 1;
+}
+.blog .entry-meta {
 	background-color: #248a83;
 	position: absolute;
 	bottom: 0;
@@ -32,10 +37,22 @@
 	width: 1120px;
 	margin-right: auto;
 	margin-left: auto;
+	
 }
+
+.blog .content-area  {
+	border-right-width: 1px;
+	border-right-color: #e1e1e1;
+	border-right-style: solid;
+	width: 73%;
+	flex-grow: 1;
+}
+
+
 .site-main {
-	width: 75%;
-	margin: 0 auto;
+	// width: 75%;
+	// margin: 0 auto;
+	
 }
 .sticky {
 	display: block;

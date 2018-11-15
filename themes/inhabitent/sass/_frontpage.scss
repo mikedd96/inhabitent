@@ -1,0 +1,28 @@
+.frontpage-container {
+    display: flex;
+}
+.frontpage-stuff {
+    border-bottom-width: 1px;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-top-width: 10px;
+    border-style: solid;
+    border-color: #e1e1e1;
+    margin: 10px;
+    text-align: center;
+}
+.frontpage-stuff img {
+    width: 25%;
+    margin-top: 10px;
+}
+.frontpage-stuff a {
+    background-color: #248a83;
+    padding: .75rem 1.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+.frontpage-stuff a:hover {
+    background-color: #19625d;
+}

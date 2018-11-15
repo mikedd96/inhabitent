@@ -8,7 +8,6 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<!-- <div class="content"> -->
 		<div id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
@@ -37,7 +36,7 @@ get_header(); ?>
 		</div><!-- #main -->
 
 		
-<!-- </div> -->
+
 
 	</div>
 
