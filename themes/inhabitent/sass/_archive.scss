@@ -1,0 +1,27 @@
+.archive .page-header {
+    width: 100%;
+}
+.archive article {
+width: 260px;
+
+}
+.archive .site-content {
+
+}
+.archive .entry-header {
+height: 250px;
+overflow: hidden;
+}
+.archive .site-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.archive article img {
+    height: 250px;
+    width: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%)
+}

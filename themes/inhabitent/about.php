@@ -9,9 +9,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-	<!-- <div class="hero-frontpage">
-    <img class="frontpage-image" src="<?php echo get_template_directory_uri() . './images/about-hero.jpg';?>" />
-</div> -->
+	
 		<main id="main" class="site-main" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>

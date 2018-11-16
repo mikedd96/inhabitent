@@ -118,3 +118,40 @@ function inhabitent_dynamic_css(){
    
    
    add_action('wp_enqueue_scripts', 'inhabitent_dynamic_css');
+
+   // modify product post type loop
+   function inhabitent_mod_post_type_archive( $query ) {
+     if( 
+       ( is_post_type_archive( array( 'product' ) ) || $query->is_tax( 'product_type' ) )
+       && !is_admin()
+       && $query->is_main_query()
+     ) {
+       $query->set( 'orderby', 'title');
+       $query->set( 'order', 'ASC');
+       $query->set( 'posts_per_page', 16);
+
+     } 
+   }
+
+   add_action( 'pre_get_posts', 'inhabitent_mod_post_type_archive');
+
+   // filter product archive title
+   function inhabitent_archive_title( $title ){
+     if( is_post_type_archive( 'product' ) ){
+      $title = 'Shop Stuff';
+     } elseif( is_tax( 'product_type' ) ){
+      $title = sprintf( '%1$s', single_term_title( '', false) );
+     }
+     return $title;
+   }
+
+   add_filter( 'get_the_archive_title', 'inhabitent_archive_title');
+
+   // replace the excerpt read more
+   
+function inhabitent_excerpt_more($more) {
+  global $post;
+  return '<a class="read-more-journal" href="' . get_permalink( $post->ID) . '" >Read More</a>';
+}
+
+   add_filter('excerpt_more', 'inhabitent_excerpt_more');

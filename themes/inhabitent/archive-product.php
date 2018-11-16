@@ -3,7 +3,6 @@
  * The template for displaying archive pages.
  *
  * @package RED_Starter_Theme
- * Template Name: Archive Page Template
  */
 
 get_header(); ?>
@@ -24,7 +23,8 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php
-					get_template_part( 'template-parts/content' );
+                    get_template_part( 'template-parts/content' );
+                    the_product_title()
 				?>
 
 			<?php endwhile; ?>
@@ -33,7 +33,8 @@ get_header(); ?>
 
 		<?php else : ?>
 
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+            <?php get_template_part( 'template-parts/content', 'none' ); ?>
+            
 
 		<?php endif; ?>
 
