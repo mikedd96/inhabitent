@@ -39,16 +39,30 @@ a {
 }
 
 .menu-menu-1-container {
-	display: flex;
-	border-bottom-width: 1px;
-	border-bottom-color: #e1e1e1;
-	border-bottom-style: solid;
+	// display: flex;
+	// border-bottom-width: 1px;
+	// border-bottom-color: #e1e1e1;
+	// border-bottom-style: solid;
+}
+.tent-icon {
+	width: 50px;
+	position: absolute;
+	left: 7rem;
 }
 .main-navigation {
 	clear: both;
-	display: block;
+	display: flex;
 	float: left;
 	width: 100%;
+	border-bottom-width: 1px;
+	border-bottom-color: #e1e1e1;
+	border-bottom-style: solid;
+	position: fixed;
+	background: rgba(255, 255, 255, 0.479);
+	
+	
+	
+	
 
 	ul {
 		display: none;
@@ -70,6 +84,7 @@ a {
 			}
 
 			li {
+				// list-style: none;
 				&:hover > ul,
 				&.focus > ul {
 					left: 100%;
