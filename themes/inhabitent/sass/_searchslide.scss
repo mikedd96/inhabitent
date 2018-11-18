@@ -1,0 +1,17 @@
+
+
+.search-slide {
+    animation-name: search;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+
+}
+@keyframes search {
+    0% { width: 0;}
+    100% {width: 100%;}
+}
+
+@keyframes search-remove {
+    0% { width: 100;}
+    100% {width: 0%;}
+}

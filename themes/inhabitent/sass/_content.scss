@@ -57,12 +57,21 @@
 .page-template-about .entry-header {
 	background: no-repeat center bottom;
 }
-.blog .content-area  {
+.blog .content-area, .page-template-default .content-area  {
 	border-right-width: 1px;
 	border-right-color: #e1e1e1;
 	border-right-style: solid;
 	width: 73%;
 	flex-grow: 1;
+}
+.blog .site-main, .page-template-default .site-main {
+	margin-right: 3.5rem;
+}
+.blog .site-main, .blog .widget-area, .page-template-default .widget-area, .page-template-default .site-main {
+	margin-top: 6rem;
+}
+figure {
+	margin: 0;
 }
 
 

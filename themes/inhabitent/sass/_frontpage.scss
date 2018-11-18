@@ -43,7 +43,9 @@
     grid-column-gap: 25px;
 
 }
-
+.journal-entry {
+    line-height: 0;
+}
 .journal-entry img {
     height: 250px; 
     // margin: 10px;  
@@ -80,6 +82,7 @@
     text-decoration: none;
     font-size: 12px;
     font-weight: 100;
+    line-height: 1.5;
 }
 .entry-date, .journal-title, .read-more {
     margin-left: 10px
