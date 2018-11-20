@@ -1,3 +1,6 @@
+.home .content-area {
+    width: 100%;
+}
 .frontpage-container {
     display: flex;
 }
@@ -24,7 +27,10 @@
     left: 40%;
 }
 .frontpage-image {
-    height: 100vh;
+    height: 666px;
+}
+.home h2 {
+    text-align: center;
 }
 .frontpage-stuff a {
     background-color: #248a83;
@@ -65,6 +71,9 @@
 }
 .journal-title:hover {
     color: #2f1339;
+}
+.journal-title:visited {
+	color: #248a83
 }
 .read-more {
     color: black;

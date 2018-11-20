@@ -114,6 +114,8 @@ function inhabitent_dynamic_css(){
     wp_add_inline_style('red-starter-style',  $hero_css);
    
    }
+
+   
    
    
    
@@ -151,7 +153,7 @@ function inhabitent_dynamic_css(){
    
 function inhabitent_excerpt_more($more) {
   global $post;
-  return '<a class="read-more-journal" href="' . get_permalink( $post->ID) . '" >Read More</a>';
+  return  '<span> [...]</span><p> <a class="read-more-journal" href="' . get_permalink( $post->ID) . '" >Read More → </a> </p>';
 }
 
    add_filter('excerpt_more', 'inhabitent_excerpt_more');

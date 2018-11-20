@@ -63,14 +63,18 @@ height: 100%;
 .textwidget {
 display: flex;
 flex-direction: column;	
-
 }
-
-#text-3 {
-
-	
+.widget_archive li {
+	list-style: none;
 }
-#archive-3 {
-
-	
+.widget_archive li a {
+	color: #248a83;
+	text-decoration: none;
+}
+.widget_archive ul {
+	padding-left: 0;
+	margin-left: 0;
+}
+.widget_archive:hover {
+	color: #2f1339
 }

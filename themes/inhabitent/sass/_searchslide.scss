@@ -1,17 +1,19 @@
 
+.main-navigation {
+    .search-field {
+        width: 0;
+        opacity: 0;
+        transition: .5s;
+    }
 
-.search-slide {
-    animation-name: search;
-    animation-duration: .5s;
-    animation-timing-function: ease-in-out;
+    .search-slide {
+        width: 200px;
+        opacity: 1;
+    }
+
 
 }
-@keyframes search {
-    0% { width: 0;}
-    100% {width: 100%;}
-}
 
-@keyframes search-remove {
-    0% { width: 100;}
-    100% {width: 0%;}
-}
+
+
+

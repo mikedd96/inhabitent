@@ -21,3 +21,12 @@ fieldset {
     vertical-align: bottom;
     box-shadow: none;
 }
+.error404 .fa-search {
+    display: none;
+}
+.error404 .search-field {
+    width: 200px;
+    border-radius: 0;
+    background-color: #e4e4e4;
+    height: 35px;
+}

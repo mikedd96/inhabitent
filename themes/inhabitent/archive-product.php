@@ -45,8 +45,9 @@ get_header(); ?>
                 ?>
 <div class="archive-text">
    <?php the_title(); ?>
-   <?php get_template_part('price');?>
-   <?php echo CFS()->get( 'price' ); ?>
+   <div class="elips">
+   </div>
+   <?php echo "$" . CFS()->get( 'price' ); ?>
     </div>
 </div>
 

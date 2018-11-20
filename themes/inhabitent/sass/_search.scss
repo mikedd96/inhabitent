@@ -1,0 +1,49 @@
+.search .page-title {
+    font-size: 2.5rem;
+    font-family: Nove Normal;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    border-bottom: #e1e1e1 solid 1px;
+}
+.search h2 a {
+    font-family: Nove Normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #248a83;
+    font-size: 2.1rem;
+}
+.search .entry-title {
+    padding-top: 3rem;
+}
+.search .search-pagination {
+    border-top: #e1e1e1 solid 1px;
+    padding-bottom: 5rem;
+    padding-top: 2rem;
+}
+.search .page-numbers {
+    background-color: #248a83;
+	border: none;
+	box-shadow: none;
+	text-shadow: none;
+	border-radius: 0;
+	color: #fff;
+	padding: .5rem .75rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Nove Demibold;
+}
+.search .page-numbers:hover {
+    background-color: #2f1339;
+}
+.cat-links, .tags-links {
+	margin-right: 2rem;
+	font-family: Nove DemiBold;
+}
+.cat-links a, .tags-links a {
+	text-decoration: none;
+	color: #248a83;
+}
+.cat-links a:hover, .tags-links a:hover {
+	color: #2f1339;
+}

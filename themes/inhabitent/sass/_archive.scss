@@ -70,3 +70,11 @@ margin-bottom: 0;
     justify-content: center;
     align-items: center;
 }
+.elips {
+    display: flex;
+    margin: 0 2px;
+
+    &:after {
+        content: '.....................' 
+    }
+}

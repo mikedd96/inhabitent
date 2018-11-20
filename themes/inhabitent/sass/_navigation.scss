@@ -38,13 +38,15 @@ a {
 .site-description {
 	display: none;
 }
-
-.menu-menu-1-container {
-	// display: flex;
-	// border-bottom-width: 1px;
-	// border-bottom-color: #e1e1e1;
-	// border-bottom-style: solid;
+.menu-all {
+	display: flex;
+	width: 1120px;
+	justify-content: flex-end;
+	margin: 0 auto;
 }
+// .menu-menu-1-container {
+// 	margin: 0 auto;
+// }
 .tent-icon {
 	width: 50px;
 	position: absolute;
@@ -141,11 +143,11 @@ a {
 		display: none;
 	}
 	.main-navigation ul {
-		// display: block;
-		display: flex;
-		justify-content: flex-end;
-		width: 1120px;
-		margin: 0 auto;
+		display: block;
+		// display: flex;
+		// justify-content: flex-end;
+		// width: 1120px;
+		// margin: 0 auto;
 		
 	}
 }
