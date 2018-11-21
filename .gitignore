@@ -8,7 +8,7 @@
 # Ignore everything in "plugins" except certain plugins. #
 plugins/*
 !plugins/inhabitent-functionality/
-!plugins/business-hours-widget/
+!plugins/inhabitent-business-hours/
 # Ignore everything in "themes" except the active theme. #
 themes/*
 !themes/inhabitent/
