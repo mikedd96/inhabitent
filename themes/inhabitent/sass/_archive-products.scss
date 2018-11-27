@@ -1,11 +1,33 @@
-.archive .page-title {
+.tax-product_type .page-title, .post-type-archive .page-title {
     text-align: center;
     padding-top: 60px;
     font-size: 2.5rem;
     text-transform: uppercase;
+    margin-top: 0;
+}
+.category-parts {
+    padding-top: 2rem;
 }
 .taxonomy-description {
     display: none;
+}
+.category-parts .page-title {
+    font-family: 'Nove Normal';
+}
+.tax-product_type .taxonomy-description {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+.tax-product_type .taxonomy-description p {
+    margin-top: 0;
+}
+.tax-product_type .category-parts {
+    border-bottom: 1px dashed #c8c8c8;
+    margin-bottom: 2rem;
+}
+.tax-product_type  .site-content {
+    display: inherit;
 }
 .cat-tags {
     display: flex;
@@ -22,31 +44,32 @@
     font-family: Nove DemiBold;
     
 }
-.archive .tags-a a:hover {
+.tax-product_type .tags-a:hover, .post-type-archive .tags-a a:hover {
 
     color: #2f1339;
 }
-.archive .page-header {
+.tax-product_type .page-header, .post-type-archive .page-header {
     width: 100%;
 }
-.archive article {
+.tax-product_type article, .post-type-archive article {
 width: 260px;
 margin-bottom: 0;
 
 }
-.archive .entry-content {
+.tax-product_type .entry-content, .post-type-archive .entry-content {
     margin-top: 0;
 }
-.archive .entry-header {
+.tax-product_type .entry-header, .post-type-archive .entry-header {
     height: 250px;
     overflow: hidden;
 }
-.archive .site-main {
+.tax-product_type .site-main, .post-type-archive .site-main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-bottom: 2rem;
 }
-.archive article img {
+.tax-product_type  article img, .post-type-archive article img {
     height: 250px;
     width: auto;
     position: absolute;
@@ -54,7 +77,7 @@ margin-bottom: 0;
     top: 50%;
     transform: translate(-50%,-50%)
 }
-.archive .entry-content p {
+.tax-product_type .entry-content p, .post-type-archive .entry-content p {
     display: none;
 }
 .archive-text {
@@ -75,6 +98,6 @@ margin-bottom: 0;
     margin: 0 2px;
 
     &:after {
-        content: '.....................' 
+        content: '...........';
     }
 }

@@ -7,6 +7,7 @@
 
 get_header(); ?>
 
+	<div class="single-product">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -19,17 +20,18 @@ get_header(); ?>
 		<?php if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
-
+	</header><!-- .entry-header -->
+<div class="entry-content">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
 		<div class="entry-meta">
 			<?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>
 		</div><!-- .entry-meta -->
-	</header><!-- .entry-header -->
-
-	<?php echo CFS()->get( 'price' ); ?>
-
-	<div class="entry-content">
+	
+	<div class="product-price">
+	<?php echo "$" . CFS()->get( 'price' ); ?>
+	</div>
+	
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
@@ -37,6 +39,15 @@ get_header(); ?>
 				'after'  => '</div>',
 			) );
 		?>
+		<button class="social-button" type="button">
+			<i class="fab fa-facebook-f"></i> Like 
+			</button>
+			<button class="social-button" type="button">
+				<i class="fab fa-twitter"></i> Tweet 
+			</button>
+			<button class="social-button" type="button">
+				<i class="fab fa-pinterest"></i> Pin 
+			</button>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
@@ -59,5 +70,6 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+	</div>
 
 <?php get_footer(); ?>

@@ -644,7 +644,8 @@ a {
   .widget .widget-title {
     color: #2f1339;
     text-transform: uppercase;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    font-family: 'Nove Normal'; }
 
 /* Search widget. */
 .widget_search .search-submit {
@@ -735,7 +736,7 @@ body {
 .entry-content span {
   font-weight: 400; }
 
-.blog .entry-title, .post-template-default .entry-title {
+.category .entry-title, .blog .entry-title, .post-template-default .entry-title {
   position: absolute;
   top: 0;
   background-color: #248a83;
@@ -746,12 +747,12 @@ body {
   font-size: 2rem;
   line-height: 1.25rem; }
 
-.blog h2 a {
+.category h2 a, .blog h2 a {
   color: white;
   text-decoration: none;
   line-height: 1; }
 
-.blog .entry-meta, .post-template-default .entry-meta {
+.category .entry-meta, .blog .entry-meta, .post-template-default .entry-meta {
   background-color: #248a83;
   position: absolute;
   bottom: 0;
@@ -760,10 +761,10 @@ body {
   padding: .5rem 1.25rem;
   right: 0; }
 
-.blog .entry-meta .entry-date {
+.category .entry-meta .entry-date, .blog .entry-meta .entry-date {
   color: white; }
 
-.blog .entry-meta span {
+.category .entry span, .blog .entry-meta span {
   font-weight: 400; }
 
 .site-content, .home .site-main {
@@ -801,7 +802,7 @@ body {
 .page-template-about .entry-header {
   background: no-repeat center bottom; }
 
-.blog .content-area, .page-template-default .content-area, .post-template-default .content-area, .error404 .content-area, .search .content-area {
+.category .content-area, .blog .content-area, .page-template-default .content-area, .post-template-default .content-area, .error404 .content-area, .search .content-area {
   border-right-width: 1px;
   border-right-color: #e1e1e1;
   border-right-style: solid;
@@ -810,10 +811,10 @@ body {
       -ms-flex-positive: 1;
           flex-grow: 1; }
 
-.blog .site-main, .page-id-41 .site-main, .post-template-default .site-main {
+.category .site-main, .blog .site-main, .page-id-41 .site-main, .post-template-default .site-main {
   margin-right: 3.5rem; }
 
-.blog .site-main, .blog .widget-area, .page-id-41 .widget-area, .page-id-41 .site-main, .post-template-default .site-main, .post-template-default .widget-area, .error404 .site-main, .error404 .widget-area, .search .site-main, .search .widget-area {
+.category .site-main, .category .widget-area, .blog .site-main, .blog .widget-area, .page-id-41 .widget-area, .page-id-41 .site-main, .post-template-default .site-main, .post-template-default .widget-area, .error404 .site-main, .error404 .widget-area, .search .site-main, .search .widget-area {
   margin-top: 6rem; }
 
 figure {
@@ -877,6 +878,7 @@ input[type="submit"] {
   margin: 0 0 1.5rem; }
 
 /* Asides */
+.tax-product_type .format-aside .entry-title
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
   display: none; }
@@ -1164,14 +1166,40 @@ fieldset {
   background-color: #e4e4e4;
   height: 35px; }
 
-.archive .page-title {
+.tax-product_type .page-title, .post-type-archive .page-title {
   text-align: center;
   padding-top: 60px;
   font-size: 2.5rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-top: 0; }
+
+.category-parts {
+  padding-top: 2rem; }
 
 .taxonomy-description {
   display: none; }
+
+.category-parts .page-title {
+  font-family: 'Nove Normal'; }
+
+.tax-product_type .taxonomy-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1.5rem; }
+
+.tax-product_type .taxonomy-description p {
+  margin-top: 0; }
+
+.tax-product_type .category-parts {
+  border-bottom: 1px dashed #c8c8c8;
+  margin-bottom: 2rem; }
+
+.tax-product_type .site-content {
+  display: inherit; }
 
 .cat-tags {
   display: -webkit-box;
@@ -1191,24 +1219,24 @@ fieldset {
   font-size: 1.3rem;
   font-family: Nove DemiBold; }
 
-.archive .tags-a a:hover {
+.tax-product_type .tags-a:hover, .post-type-archive .tags-a a:hover {
   color: #2f1339; }
 
-.archive .page-header {
+.tax-product_type .page-header, .post-type-archive .page-header {
   width: 100%; }
 
-.archive article {
+.tax-product_type article, .post-type-archive article {
   width: 260px;
   margin-bottom: 0; }
 
-.archive .entry-content {
+.tax-product_type .entry-content, .post-type-archive .entry-content {
   margin-top: 0; }
 
-.archive .entry-header {
+.tax-product_type .entry-header, .post-type-archive .entry-header {
   height: 250px;
   overflow: hidden; }
 
-.archive .site-main {
+.tax-product_type .site-main, .post-type-archive .site-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1216,9 +1244,10 @@ fieldset {
       flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  padding-bottom: 2rem; }
 
-.archive article img {
+.tax-product_type article img, .post-type-archive article img {
   height: 250px;
   width: auto;
   position: absolute;
@@ -1227,7 +1256,7 @@ fieldset {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
 
-.archive .entry-content p {
+.tax-product_type .entry-content p, .post-type-archive .entry-content p {
   display: none; }
 
 .archive-text {
@@ -1255,7 +1284,7 @@ fieldset {
   display: flex;
   margin: 0 2px; }
   .elips:after {
-    content: '.....................'; }
+    content: '...........'; }
 
 .main-navigation .search-field {
   width: 0;
@@ -1457,3 +1486,47 @@ textarea {
 
 .bypostauthor {
   display: block; }
+
+.single-product .entry-header img {
+  width: 550px; }
+
+.single-product .site-main {
+  margin-top: 6rem;
+  margin-bottom: 8rem; }
+
+.single-product .nav-previous, .single-product .nav-next {
+  display: none; }
+
+.single-product article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.single-product .entry-content {
+  width: 47.5%;
+  margin-left: 3rem;
+  margin-top: 0; }
+
+.single-product .entry-title {
+  color: #d99054;
+  font-family: 'Nove Normal';
+  font-size: 3rem;
+  margin: 0; }
+
+.single-product .entry-meta {
+  display: none; }
+
+.product-price {
+  font-size: 2rem;
+  font-family: 'Nove DemiBold'; }
+
+.single-product .entry-content p {
+  line-height: 1.75; }
+
+.category .page-title {
+  border-bottom: 1px solid #e1e1e1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Nove Normal';
+  font-size: 3rem; }

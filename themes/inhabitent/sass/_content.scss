@@ -23,7 +23,7 @@ body {
 .entry-content span {
 	font-weight: 400;
 }
-.blog .entry-title, .post-template-default .entry-title {
+.category .entry-title, .blog .entry-title, .post-template-default .entry-title {
 	position: absolute;
 	top: 0;
 	background-color: #248a83;
@@ -34,12 +34,12 @@ body {
 	font-size: 2rem;
 	line-height: 1.25rem;
 }
-.blog h2 a {
+.category h2 a, .blog h2 a {
 	color: white;
 	text-decoration: none;
 	line-height: 1;
 }
-.blog .entry-meta, .post-template-default .entry-meta {
+.category .entry-meta, .blog .entry-meta, .post-template-default .entry-meta {
 	background-color: #248a83;
 	position: absolute;
 	bottom: 0;
@@ -48,10 +48,10 @@ body {
 	padding: .5rem 1.25rem;
 	right: 0;
 }
-.blog .entry-meta .entry-date {
+.category .entry-meta .entry-date, .blog .entry-meta .entry-date {
 	color: white;
 }
-.blog .entry-meta span {
+.category .entry span, .blog .entry-meta span {
 	font-weight: 400
 }
 
@@ -81,17 +81,17 @@ body {
 .page-template-about .entry-header {
 	background: no-repeat center bottom;
 }
-.blog .content-area, .page-template-default .content-area, .post-template-default .content-area, .error404 .content-area, .search .content-area  {
+.category .content-area, .blog .content-area, .page-template-default .content-area, .post-template-default .content-area, .error404 .content-area, .search .content-area  {
 	border-right-width: 1px;
 	border-right-color: #e1e1e1;
 	border-right-style: solid;
 	width: 73%;
 	flex-grow: 1;
 }
-.blog .site-main, .page-id-41 .site-main, .post-template-default .site-main {
+.category .site-main, .blog .site-main, .page-id-41 .site-main, .post-template-default .site-main {
 	margin-right: 3.5rem;
 }
-.blog .site-main, .blog .widget-area, .page-id-41 .widget-area, .page-id-41 .site-main, .post-template-default .site-main, .post-template-default .widget-area, .error404 .site-main, .error404 .widget-area, .search .site-main, .search .widget-area {
+.category .site-main, .category .widget-area, .blog .site-main, .blog .widget-area, .page-id-41 .widget-area, .page-id-41 .site-main, .post-template-default .site-main, .post-template-default .widget-area, .error404 .site-main, .error404 .widget-area, .search .site-main, .search .widget-area {
 	margin-top: 6rem;
 }
 figure {
@@ -168,6 +168,7 @@ input[type="submit"] {
 
 /* Asides */
 
+.tax-product_type .format-aside .entry-title
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
 	display: none;

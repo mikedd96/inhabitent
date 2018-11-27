@@ -28,7 +28,7 @@
 			<h3 class="hourshead"> business hours </h3>
 			<p> <span>Monday-Friday:</span> 9am to 5pm </p>
 			<p> <span>Saturday:</span> 10am to 2pm </p>
-			<p> <span>sunday:</span> Closed </p>
+			<p> <span>Sunday:</span> Closed </p>
 		</div>
 		<div class="logo-footer">
 			<img class="footer-logo" style="width: 280px;padding-top:3rem;"src="<?php echo get_template_directory_uri();?>/logos/inhabitent-logo-text.svg"/>
