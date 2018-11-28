@@ -11,13 +11,13 @@
 }
 .social-button:hover {
 	color: white;
-	border: 1px solid #248a83;
-	background-color: #248a83;
+	border: 1px solid $primary-color;
+	background-color: $primary-color;
 	box-shadow: none;
 }
 .comment-body {
 	display: flex;
-	border-bottom: #e1e1e1 solid 1px;
+	border-bottom: $border-grey solid 1px;
 	padding: 1.5rem 0;
 }
 .comment-author-avatar {
@@ -43,7 +43,7 @@
 	color: gray;
 }
 .comment-metadata a {
-	color: #248a83;
+	color: $primary-color;
 	text-decoration: none;
 }
 .comment-metadata a:hover {
@@ -51,7 +51,7 @@
 	text-decoration: none;
 }
 .comment-reply-link {
-	color: #248a83;
+	color: $primary-color;
 	text-decoration: none;
 }
 .comment-reply-link:hover {
@@ -65,7 +65,7 @@
 }
 .logged-in-as a {
 	text-decoration: none;
-	color: #248a83
+	color: $primary-color;
 }
 .logged-in-as a:hover {
 	text-decoration: none;
@@ -92,8 +92,8 @@ textarea {
     text-transform: uppercase;
     text-decoration: none;
     font-size: 14px;
-	border: 1px solid #248a83;
-	background-color: #248a83;
+	border: 1px solid $primary-color;
+	background-color: $primary-color;
 }
 .wpcf7-form label, .comment-form label {
 	text-transform: uppercase;

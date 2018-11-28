@@ -1,8 +1,3 @@
-/*--------------------------------------------------------------
-# Content
---------------------------------------------------------------*/
-
-/* Posts and pages */
 body {
 	font-family: Merriweather Light;
 	font-size: 1rem;
@@ -26,7 +21,7 @@ body {
 .category .entry-title, .blog .entry-title, .post-template-default .entry-title {
 	position: absolute;
 	top: 0;
-	background-color: #248a83;
+	background-color: $primary-color;
 	max-width: 75%;
 	padding: .75rem 1.5rem;
 	margin-top: 3rem;
@@ -40,7 +35,7 @@ body {
 	line-height: 1;
 }
 .category .entry-meta, .blog .entry-meta, .post-template-default .entry-meta {
-	background-color: #248a83;
+	background-color: $primary-color;
 	position: absolute;
 	bottom: 0;
 	line-height: 1.25rem;
@@ -54,14 +49,11 @@ body {
 .category .entry span, .blog .entry-meta span {
 	font-weight: 400
 }
-
-	
 .site-content, .home .site-main {
 	display: flex;
 	width: 1120px;
 	margin-right: auto;
-	margin-left: auto;
-	
+	margin-left: auto;	
 }
 .home .site-content, .page-template .site-content {
 	display: flex;
@@ -75,15 +67,14 @@ body {
 	width: 1120px;
 	margin-right: auto;
 	margin-left: auto;
-	flex-direction: column;
-	
+	flex-direction: column;	
 }
 .page-template-about .entry-header {
 	background: no-repeat center bottom;
 }
 .category .content-area, .blog .content-area, .page-template-default .content-area, .post-template-default .content-area, .error404 .content-area, .search .content-area  {
 	border-right-width: 1px;
-	border-right-color: #e1e1e1;
+	border-right-color: $border-grey;
 	border-right-style: solid;
 	width: 73%;
 	flex-grow: 1;
@@ -111,9 +102,6 @@ figure {
 .page-template-default .content-area p {
 		font-family: Merriweather Light
 }
-// .product-temlpate-default .site-main {
-// 	margin-top: 80px;
-// }
 .page-template .entry-content {
 	width: 800px;
 	margin: 0 auto;
@@ -122,13 +110,12 @@ figure {
 		text-align: center;
 	}
 }
-
 input[type="email"], input[type="password"],  input[type="text"], input[type="url"] {
 	width: 420px;
 	padding: 8px;
 }
 input[type="submit"] {
-	background-color: #248a83;
+	background-color: $primary-color;
 	border: none;
 	box-shadow: none;
 	text-shadow: none;
@@ -138,43 +125,31 @@ input[type="submit"] {
 	font-size: .8rem;
 	text-transform: uppercase;
 }
-
 .sticky {
 	display: block;
 }
-
 .hentry {
 	margin: 0 0 $base__space-unit;
 }
-
 .updated:not(.published){
 	display: none;
 }
-
 .single .byline,
 .group-blog .byline {
 	display: inline;
 }
-
 .page-content,
 .entry-content,
 .entry-summary {
 	margin: $base__space-unit 0 0;
 }
-
 .page-links {
 	clear: both;
 	margin: 0 0 $base__space-unit;
 }
-
 /* Asides */
-
 .tax-product_type .format-aside .entry-title
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
 	display: none;
 }
-
-/* Comments */
-
-

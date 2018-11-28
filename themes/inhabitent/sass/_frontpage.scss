@@ -10,7 +10,7 @@
     border-left-width: 1px;
     border-top-width: 10px;
     border-style: solid;
-    border-color: #e1e1e1;
+    border-color: $border-grey;
     margin: 10px;
     text-align: center;
 }
@@ -33,7 +33,7 @@
     text-align: center;
 }
 .frontpage-stuff a {
-    background-color: #248a83;
+    background-color: $primary-color;
     padding: .75rem 1.5rem;
     text-transform: uppercase;
     text-decoration: none;
@@ -41,24 +41,22 @@
     font-size: 14px;
 }
 .frontpage-stuff a:hover {
-    background-color: #19625d;
+    background-color: $hover-button;
 }
 .journal-container {
     display: grid;
     grid-template-columns: 32% 32% 32%;
     grid-column-gap: 25px;
-
 }
 .journal-entry {
     line-height: 0;
 }
 .journal-entry img {
-    height: 250px; 
-    // margin: 10px;  
+    height: 250px;  
 }
 .journal-title {
 	top: 0;
-    color: #248a83;
+    color: $primary-color;
     font-size: 1.4rem;
     text-decoration: none;
     display: block;
@@ -73,7 +71,7 @@
     color: #2f1339;
 }
 .journal-title:visited {
-	color: #248a83
+	color: $primary-color;
 }
 .read-more {
     color: black;
@@ -102,7 +100,7 @@
     border-bottom-width: 1px;
     border-top-width: 5px;
     border-style: solid;
-    border-color: #e1e1e1;
+    border-color: $border-grey;
     height: 150px;
     margin-bottom: 20px;
 }

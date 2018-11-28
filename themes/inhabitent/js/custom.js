@@ -1,8 +1,7 @@
 (function ($) {
+    $(document).ready(function () {
 $searchField = $('.search-field');
 $iconSearch = $('.icon-search');
-    $(document).ready(function () {
-
         //your code here
         $iconSearch.on('click', function () {
         $searchField.addClass('search-slide');

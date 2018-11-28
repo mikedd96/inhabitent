@@ -27,7 +27,7 @@ get_header(); ?>
         foreach($terms as $term): ?>
         
         <div class="tags-a">
-        <a href="<?php echo get_term_link( $term ); ?>"><?php echo $term->name; ?></a></p>
+        <a href="<?php echo get_term_link( $term ); ?>"><?php echo $term->name; ?></a>
         </div>
     
     

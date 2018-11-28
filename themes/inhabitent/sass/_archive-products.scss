@@ -38,23 +38,21 @@
 }
 .archive .tags-a a {
     margin: 25px;
-    color: #248a83;
+    color: $primary-color;
     text-decoration: none;
     font-size: 1.3rem;
     font-family: Nove DemiBold;
     
 }
 .tax-product_type .tags-a:hover, .post-type-archive .tags-a a:hover {
-
     color: #2f1339;
 }
 .tax-product_type .page-header, .post-type-archive .page-header {
     width: 100%;
 }
 .tax-product_type article, .post-type-archive article {
-width: 260px;
-margin-bottom: 0;
-
+    width: 260px;
+    margin-bottom: 0;
 }
 .tax-product_type .entry-content, .post-type-archive .entry-content {
     margin-top: 0;
@@ -86,7 +84,7 @@ margin-bottom: 0;
     border-bottom-width: 1px;
     border-top-width: 5px;
     border-style: solid;
-    border-color: #e1e1e1;
+    border-color: $border-grey;
     height: 60px;
     margin-bottom: 25px;
     display: flex;
@@ -96,7 +94,6 @@ margin-bottom: 0;
 .elips {
     display: flex;
     margin: 0 2px;
-
     &:after {
         content: '...........';
     }

@@ -3,13 +3,11 @@
     outline: none;
     border: none;
 }
-
 fieldset {
     border: none;
-
 }
 .fa-search {
-    color: #248a83;
+    color: $primary-color;
     display: block;
     font-size: 1rem; 
 }

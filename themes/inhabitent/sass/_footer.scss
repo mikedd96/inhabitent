@@ -1,4 +1,3 @@
-
 footer p {
     color: white;
 }
@@ -30,11 +29,6 @@ footer p {
 span {
     font-weight: bold;
 }
-// .hourshead {
-//     font-family: Nove Normal;
-//     color: #d99054;
-//     text-transform: uppercase;
-// }
 .site-info {
     display: none;
 }
@@ -47,24 +41,14 @@ margin-right: 10px;
 font-size: 1.3rem;
 color: white;
 }
-// .fa-facebook-square {
-//     margin-left: 0;
-// }
-// .fa-envelope,  .fa-phone {
-//     margin-right: 5px;
-//     font-size: 1.3rem;
-//     }
 .site-footer {
     background-image: url(../../images/dark-wood.png);
-    // display: flex;
-    // justify-content: space-around; 
     display: grid;
     grid-template-columns: 8% 21% 31% 11%;
     grid-template-rows: 211px 80px 64px;
     font-size: 1rem;
     font-family: Merriweather Light;
 }
-
 .icons {
    list-style: none;
    display: flex;
@@ -72,11 +56,9 @@ color: white;
    padding: 0; 
    margin-left: 0;
 }
-
 .logo-footer {
     grid-column-start: 5;
 }
-
 .copyright {
     grid-row-start: 3;
     grid-column-start: 3;

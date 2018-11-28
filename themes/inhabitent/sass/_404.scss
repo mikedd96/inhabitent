@@ -1,6 +1,3 @@
-// .error404 .site-main, .error404 .widget-area {
-//     margin-top: 100px;
-// }
 .error404 .page-title {
     font-family: Nove Normal;
     font-size: 2.5rem;
@@ -17,7 +14,7 @@
     padding-left: 0;
 }
 .error404 a {
-    color: #248a83;
+    color: $primary-color;
     text-decoration: none;
 }
 .error404 li {

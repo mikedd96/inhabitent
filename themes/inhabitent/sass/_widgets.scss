@@ -1,7 +1,3 @@
-/*--------------------------------------------------------------
-# Widgets
---------------------------------------------------------------*/
-
 .widget {
 	margin: 0 0 $base__space-unit;
 
@@ -13,35 +9,26 @@
 		color: #2f1339;
 		text-transform: uppercase;
 		letter-spacing: 2px;
-		font-family: 'Nove Normal'
+		font-family: 'Nove Normal';
 	}
-	
 }
-
 /* Search widget. */
 .widget_search .search-submit {
 	display: none;
 }
 .sidephone {
-	color: #248a83;
+	color: $primary-color;
 }
 .sidephone:hover {
 	color: #2f1339;
 }
 .sideemail {
-	color: #248a83;
+	color: $primary-color;
 }
 .sideemail:hover {
 	color: #2f1339
 }
-// .widgets {
-// 	display: flex;
-// 	justify-content: flex-end;
-// 	width: 398px;
-// 	position: fixed
-// }
 .widget-area {
-	// width: 398px;
 -ms-flex-direction: column;
 flex-direction: column;
 padding-left: 3rem;
@@ -58,7 +45,6 @@ height: 100%;
 	i {
 		font-size: 1rem;
 		margin-right: 10px;
-	
 	}
 }
 .textwidget {
@@ -69,7 +55,7 @@ flex-direction: column;
 	list-style: none;
 }
 .widget_archive li a {
-	color: #248a83;
+	color: $primary-color;
 	text-decoration: none;
 }
 .widget_archive ul {

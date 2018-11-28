@@ -3,25 +3,25 @@
     font-family: Nove Normal;
     text-transform: uppercase;
     padding-bottom: 1rem;
-    border-bottom: #e1e1e1 solid 1px;
+    border-bottom: $border-grey solid 1px;
 }
 .search h2 a {
     font-family: Nove Normal;
     text-transform: uppercase;
     text-decoration: none;
-    color: #248a83;
+    color: $primary-color;
     font-size: 2.1rem;
 }
 .search .entry-title {
     padding-top: 3rem;
 }
 .search .search-pagination {
-    border-top: #e1e1e1 solid 1px;
+    border-top: $border-grey solid 1px;
     padding-bottom: 5rem;
     padding-top: 2rem;
 }
 .search .page-numbers {
-    background-color: #248a83;
+    background-color: $primary-color;
 	border: none;
 	box-shadow: none;
 	text-shadow: none;
@@ -42,7 +42,7 @@
 }
 .cat-links a, .tags-links a {
 	text-decoration: none;
-	color: #248a83;
+	color: $primary-color;
 }
 .cat-links a:hover, .tags-links a:hover {
 	color: #2f1339;
