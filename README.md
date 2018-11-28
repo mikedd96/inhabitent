@@ -1,5 +1,5 @@
 # Inhabitent
-![screenshot](images/screenshot.png "inhabitent homepage screenshot")
+![screenshot](./themes/inhabitent/images/screenshot.png "inhabitent homepage screenshot")
 # About Inhabitent
       Inhabitent is a hipster "camping" website that offers camping related products and advice as well as blog arictles on the subject. it contain a page to display all the different products and blog posts as well as single pages with more detail on oth the blog entries and products, as well as a short aboutf or the site.
 
