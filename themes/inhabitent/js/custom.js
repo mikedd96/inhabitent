@@ -1,26 +1,18 @@
 (function ($) {
-
+$searchField = $('.search-field');
+$iconSearch = $('.icon-search');
     $(document).ready(function () {
 
         //your code here
-        $('.icon-search').on('click', function () {
-            $('.search-field').addClass('search-slide');
-            $('.search-field').focus();
+        $iconSearch.on('click', function () {
+        $searchField.addClass('search-slide');
+        $searchField.focus();
 
         });
-        $('.search-field').on('blur', function () {
-            $('.search-field').removeClass('search-slide');
+        $searchField.on('blur', function () {
+        $searchField.removeClass('search-slide');
 
         })
-    });
-
-})(jQuery);
-
-(function ($) {
-
-    $(document).ready(function () {
-
-        
     });
 
 })(jQuery);
