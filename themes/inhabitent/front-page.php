@@ -9,8 +9,8 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
         <div class="hero-frontpage">
-        <img class="frontpage-icon" src="<?php echo get_template_directory_uri() . './images/inhabitent-logo-full.svg';?>" />
-    <img class="frontpage-image" src="<?php echo get_template_directory_uri() . './images/home-hero.jpg';?>" />
+        <img class="frontpage-icon" src="<?php echo get_template_directory_uri() . './images/inhabitent-logo-full.svg';?>" alt="inhabitent-icon" />
+    <img class="frontpage-image" src="<?php echo get_template_directory_uri() . './images/home-hero.jpg';?>" alt="front-page-banner-image"/>
 </div>
 		<div id="main" class="site-main" role="main">
         
@@ -29,7 +29,7 @@ get_header(); ?>
         <div class="frontpage-stuff">
         <img src="<?php echo get_template_directory_uri() . '/images/' . $term->slug . '.svg'; ?>" alt="<?php echo $term->name; ?>" />
         <p><?php echo $term->description; ?></p>
-        <a href="<?php echo get_term_link( $term ); ?>"><?php echo $term->name; ?> stuff</a></p>
+        <a href="<?php echo get_term_link( $term ); ?>"><?php echo $term->name; ?> stuff</a>
         </div>
     
         <?php endforeach;

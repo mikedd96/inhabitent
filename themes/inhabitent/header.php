@@ -33,7 +33,7 @@
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 					<?php get_search_form(); ?>
 </div>
-					<a href="http://localhost/inhabitent/"> <img class="tent-icon" src="<?php echo get_template_directory_uri() . './images/inhabitent-logo-tent.svg';?>" > </a>
+					<a href="http://localhost/inhabitent/"> <img class="tent-icon" src="<?php echo get_template_directory_uri() . './images/inhabitent-logo-tent.svg';?>" alt="tent-icon" > </a>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 

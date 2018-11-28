@@ -31,11 +31,12 @@
 			<p> <span>Sunday:</span> Closed </p>
 		</div>
 		<div class="logo-footer">
-			<img class="footer-logo" style="width: 280px;padding-top:3rem;"src="<?php echo get_template_directory_uri();?>/logos/inhabitent-logo-text.svg"/>
+			<img class="footer-logo" style="width: 280px;padding-top:3rem;" src="<?php echo get_template_directory_uri();?>/logos/inhabitent-logo-text.svg" alt="inhabitent-loogo-footer"/>
 			
 		</div>
 		<div class="copyright">
 			<p> Copyright © 2019 Inhabitent</p>
+		</div>
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 
